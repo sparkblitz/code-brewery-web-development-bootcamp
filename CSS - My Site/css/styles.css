@@ -1,5 +1,6 @@
 body {
     margin : 0; /* top, bottom, left, and right margins are zero; no need to specify the unit if zero*/
+    text-align: center; /* center everything in the body that does NOT have a width set*/
 }
 
 h1 {
@@ -12,6 +13,8 @@ div {
 
 .top-container {
     background-color: #e4f9f5; /* Find colors in: https://colorhunt.co/ */
+    position: relative;
+    padding-top: 100px; /* pushes everything down a little bit */
 }
 
 .middle-container {
@@ -20,3 +23,14 @@ div {
 .bottom-container {
 }
 
+.top-cloud {
+    position : absolute;
+    right: 25%;
+    top: 50px;
+}
+
+.bottom-cloud {
+    position: absolute; /*moves the cloud so the mountain moves at the center*/
+    left: 30%;
+    bottom: 300px;
+}
